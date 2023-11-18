@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <style>
+    body {
+      background-color: #212529;
+      color: #ddd;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      color: #fff;
+    }
+
+    section {
+      margin-top: 20px;
+      text-align: center; /* Añadido para centrar el texto dentro de las secciones */
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #008000;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      margin: 0 auto; /* Añadido para centrar horizontalmente el botón */
+      display: block; /* Añadido para centrar horizontalmente el botón */
+    }
+
+    button:hover {
+      background-color: #006400;
+    }
+  </style>
+</head>
+<body>
+  <h1>Información de Contacto</h1>
+  <section>
+    <h2>Mi información</h2>
+    <p><strong>Nombre:</strong> Cristian Alexander Ospina Sanchez</p>
+    <p><strong>Celular:</strong> 3105385637</p>
+    <p><strong>Correo:</strong> Alexanderospina17@gmail.com</p>
+  </section>
+  <section>
+    <h2>Contactame por WhatsApp</h2>
+    <p>Puedes contactarme a través de WhatsApp haciendo clic en el siguiente botón:</p>
+    <button onclick="redirigirAWhatsApp()">WhatsApp</button>
+  </section>
+  <script>
+    function redirigirAWhatsApp() {
+      var numeroWhatsApp = "3105385637";
+      // Construye la URL de WhatsApp con el número y un mensaje opcional
+      var urlWhatsApp = "https://wa.me/" + numeroWhatsApp + "?text=Hola,%20estoy%20interesado%20en%20contactarte.";
+      // Redirecciona a la URL de WhatsApp
+      window.location.href = urlWhatsApp;
+    }
+  </script>
+</body>
+</html>

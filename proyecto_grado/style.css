@@ -1,0 +1,17 @@
+
+.text{
+    color: rgb(252, 254, 252);
+}
+
+.titulo{
+    text-align: center;
+    background-color: blueviolet;
+}
+
+.cuerpop{
+    background-color: blueviolet;
+}
+
+.carousel-item {
+    padding-top: 50;
+}
